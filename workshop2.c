@@ -33,7 +33,7 @@ int main(void){
 	
 	printf("Change loonies\t\t\t%d\n", (int)change);			// outputs the number of loonies in the change
 
-	cents = change * 100;
+	cents = change * 100 + 0.5;
 	
 	printf("Change cents\t\t\t%d\n", (int)cents % 100); 		// outputs the number of cents in the change
 
