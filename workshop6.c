@@ -23,17 +23,18 @@ int main(void){
 	int num;
 	char endInput;
 	int result = 0;
+	int loop = 0;
 
 
 	printf("Game of Dice\n");
 	printf("=============\n");
 
-	while (result == 0){ 
+	while (loop == 0){ 
 
 		printf("Enter total sought: ");
 		result = scanf ("%d%c", &num, &endInput);
 		
-		result = validate(result, num, endInput);
+		loop = validate(result, num, endInput);
 		
 	}
 
